@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trap
+  - Enemy
+  - Terrain
+  - Fruit
+  - Checkpoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Trap
+  - Enemy
+  - Fruit
+  - Confiner
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3387861333
+    locked: 0
+  - name: Trap
+    uniqueID: 3429058687
+    locked: 0
+  - name: Terrain
+    uniqueID: 1921832901
+    locked: 0
+  - name: Enemy
+    uniqueID: 2050585749
+    locked: 0
+  - name: Particle
+    uniqueID: 1981000019
+    locked: 0
+  - name: Player
+    uniqueID: 406999069
+    locked: 0
+  - name: Fruit
+    uniqueID: 3334704219
+    locked: 0
+  - name: Checkpoint
+    uniqueID: 2199258803
+    locked: 0
+  - name: HomeUI
+    uniqueID: 2164372761
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
