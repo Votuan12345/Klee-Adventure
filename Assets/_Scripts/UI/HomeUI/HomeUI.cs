@@ -21,7 +21,8 @@ public class HomeUI : MonoBehaviour
 
     public void OnPlayButtonClick()
     {
-        if(homePanel != null && levelPanel != null && optionsPanel != null)
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
+        if (homePanel != null && levelPanel != null && optionsPanel != null)
         {
             homePanel.SetActive(false);
             levelPanel.SetActive(true);
@@ -31,6 +32,7 @@ public class HomeUI : MonoBehaviour
 
     public void OnOptionsButtonClick() 
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         if (homePanel != null && levelPanel != null && optionsPanel != null)
         {
             homePanel.SetActive(false);
@@ -41,6 +43,7 @@ public class HomeUI : MonoBehaviour
 
     public void OnBackButtonClick()
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         if (homePanel != null && levelPanel != null && optionsPanel != null)
         {
             homePanel.SetActive(true);
@@ -51,12 +54,14 @@ public class HomeUI : MonoBehaviour
 
     public void OnQuitButtonClick()
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         Application.Quit();
     }
 
     #region Select level
     public void SelectLevel(int level)
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         SceneManager.LoadSceneAsync("Level" + level);
     }
     #endregion

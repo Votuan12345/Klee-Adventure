@@ -28,6 +28,7 @@ public class SelectCharacterUI : MonoBehaviour
 
     public void OnArrowLeftButtonClick()
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         index--;
         index = Mathf.Clamp(index, 0, characters.Count-1);
 
@@ -47,6 +48,7 @@ public class SelectCharacterUI : MonoBehaviour
 
     public void OnArrowRightButtonClick()
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         index++;
         index = Mathf.Clamp(index, 0, characters.Count - 1);
 

@@ -40,10 +40,11 @@ public class GameManager : MonoBehaviour
         gameState = GameState.playing;
     }
 
-    #region ReloadGame
-    public void ReloadGame()
+    #region OnClickReloadGame
+    public void OnClickReloadGame()
     {
-        UIManager.instance.ShowResumePanel(false);
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
+        UIManager.instance.ShowMenuPanel(false);
         UIManager.instance.ShowGameOverPanel(false);
         UIManager.instance.ShowWinPanel(false);
         StartCoroutine(ReLoadGameCoroutine());
@@ -58,9 +59,10 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    #region LoadNextLevel
-    public void LoadNextLevel()
+    #region OnClickNextLevel
+    public void OnClickNextLevel()
     {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
         UIManager.instance.ShowWinPanel(false);
         StartCoroutine (LoadNextLevelCoroutine());
     }
@@ -75,10 +77,11 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    #region LoadHomeGame
-    public void LoadHomeGame()
+    #region OnClickHomeGame
+    public void OnClickHomeGame()
     {
-        UIManager.instance.ShowResumePanel(false);
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
+        UIManager.instance.ShowMenuPanel(false);
         UIManager.instance.ShowGameOverPanel(false);
         UIManager.instance.ShowWinPanel(false);
         StartCoroutine(LoadHomeGameCoroutine());
@@ -93,12 +96,21 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    #region ContinueGame
-    public void ContinueGame()
+    #region OnClickResumeGame
+    public void OnClickResumeGame()
     {
-        UIManager.instance.ShowResumePanel(false);
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
+        UIManager.instance.ShowMenuPanel(false);
         UIManager.instance.ShowGameOverPanel(false);
         UIManager.instance.ShowWinPanel(false);
+    }
+    #endregion
+
+    #region OnClickMenuButton
+    public void OnClickMenuButton()
+    {
+        AudioController.Instance.PlaySFX(AudioController.Instance.buttonClick);
+        UIManager.instance.ShowMenuPanel(true);
     }
     #endregion
 

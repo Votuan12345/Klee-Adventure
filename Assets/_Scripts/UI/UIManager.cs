@@ -37,17 +37,10 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        ShowResumePanel(false);
+        ShowMenuPanel(false);
         ShowGameOverPanel(false);
         ShowWinPanel(false);
     }
-
-    #region OnClickResumeButton
-    public void OnClickResumeButton()
-    {
-        ShowResumePanel(true);
-    }
-    #endregion
 
     #region HealthUI
     public void ShowHealthReductionUI()
@@ -81,7 +74,7 @@ public class UIManager : MonoBehaviour
     #endregion
 
     #region UIPanels
-    public void ShowResumePanel(bool value)
+    public void ShowMenuPanel(bool value)
     {
         Time.timeScale = value ? 0f : 1f;
 

@@ -17,7 +17,7 @@ public class AudioController : MonoBehaviour
     public AudioClip jump;
     public AudioClip collect;
     public AudioClip finish;
-
+    public AudioClip buttonClick;
     public static AudioController Instance => instance;
 
     private void Awake()
@@ -53,6 +53,7 @@ public class AudioController : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
+        if (clip == null) return;
         sfxSource.PlayOneShot(clip);
     }
 
