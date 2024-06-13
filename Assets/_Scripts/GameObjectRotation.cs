@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameObjectRotation : MonoBehaviour
 {
-     [SerializeField] protected float speed;
-
+    [SerializeField] protected float speed;
+ 
     protected virtual void FixedUpdate()
     {
         Rotate();

@@ -16,7 +16,11 @@ public class Fire : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(FireOn());
+        if(countDown <= 0)
+        {
+            animator.SetBool("On", true);
+        }
+        else StartCoroutine(FireOn());
     }
 
     IEnumerator FireOn()

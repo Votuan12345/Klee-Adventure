@@ -172,7 +172,9 @@ MonoBehaviour:
   - {fileID: 8509330744371496}
   - {fileID: 8383757465884750345}
   - {fileID: 6565629615321552836}
+  - {fileID: 6712322501987747741}
   spikedBallOb: {fileID: 449950856810304884}
+  isRight: 0
 --- !u!1 &5753497266777087378
 GameObject:
   m_ObjectHideFlags: 0

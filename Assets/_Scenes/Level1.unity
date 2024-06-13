@@ -65667,8 +65667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.92, y: 0}
-  m_SizeDelta: {x: 178.7, y: 90.88}
+  m_AnchoredPosition: {x: 70.89, y: 0}
+  m_SizeDelta: {x: 230.64, y: 90.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781286284
 MonoBehaviour:
@@ -68169,6 +68169,7 @@ MonoBehaviour:
   - {fileID: 8383757465887493473}
   - {fileID: 6565629615326406828}
   spikedBallOb: {fileID: 449950856815159836}
+  isRight: 0
 --- !u!1 &3331841038464532138
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,10 +12,12 @@ GameObject:
   - component: {fileID: 5767324991446147532}
   - component: {fileID: 3067742865333841050}
   - component: {fileID: 8925794019176459240}
-  - component: {fileID: 2846436201643583602}
-  m_Layer: 8
+  - component: {fileID: 7368146823010694818}
+  - component: {fileID: 5494895988071264586}
+  - component: {fileID: 7328281301336791342}
+  m_Layer: 6
   m_Name: RockHead
-  m_TagString: Trap
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -865908609
-  m_SortingLayer: -7
-  m_SortingOrder: 0
+  m_SortingLayer: -8
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 282fa6659f7eabb4f88d7cd347ae7723, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,8 +139,8 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.000000059604645, y: 0.000048160553}
   m_SpriteTilingProperty:
@@ -153,7 +155,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9531199, y: 1.9532161}
   m_EdgeRadius: 0
---- !u!114 &2846436201643583602
+--- !u!114 &7368146823010694818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,5 +167,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7956d88e6425304eb0fa5bdc191bf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 0
   wayPoints: []
+--- !u!50 &5494895988071264586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5405261084148742087}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 50
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!251 &7328281301336791342
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5405261084148742087}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 704
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
